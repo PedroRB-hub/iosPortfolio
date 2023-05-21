@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color1);
+}
+
+a:visited {
+    color: var(--text-color1);
+}
+
+body {
+    min-height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: var(--bg-linear1);
+    background-repeat: no-repeat;
+    font-family: 'Rajdhani', sans-serif;
+    color: var(--text-color);
+    margin: 10px auto;
+}
+
+main {
+    max-width: 1600px;
+    margin: 0px auto;
+    position: relative;
+    box-shadow: 1px 1px 2px grey;
+}
+
+img {
+    max-width: 100%;
+    /* height: auto; */
+    object-fit: cover;
+}
+
+:root {
+    --bg-linear1: linear-gradient(339deg, rgba(191, 200, 217, 1) 0%, rgba(221, 230, 237, 1) 65%);
+    --bg-stock2: #F1F4FF;
+    --bg-stock3: #27374D;
+    --text-color1: #080a13;
+    --text-color2: #fcfbf8;
+    --bg-btn: ;
+    --bg-card: #9DB2BF;
+}
+
+/* cabeçalho */
+.header {
+    display: grid;
+    max-width: 1200px;
+    margin: 0px auto;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    height: 70px;
+}
+
+.header ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+main {
+    background: var(--bg-stock2);
+    border-radius: 4px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1200px 400px;
+}
+
+.lista li a {
+    border: 1px solid #ddd;
+    /* Add a border to all links */
+    margin-top: -1px;
+    /* Prevent double borders */
+    background-color: #f6f6f6;
+    /* Grey background color */
+    padding: 16px;
+    /* Add some padding */
+    text-decoration: none;
+    /* Remove default text underline */
+    font-size: 24px;
+    /* Increase the font-size */
+    color: black;
+    /* Add a black text color */
+    display: block;
+    /* Make it into a block element to fill the whole list */
+}
+ul {
+    list-style: none;
+
+}

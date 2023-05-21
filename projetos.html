@@ -1,21 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="stylesheet" href="projetos.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio do Belmas - Projetos</title>
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            var iframe = document.getElementById('meu_iframe');
+            iframe.addEventListener('load', function () {
+                var contentHeight = iframe.contentWindow.document.body.scrollHeight;
+                iframe.style.height = contentHeight + 'px';
+            });
+        });
+    </script>
 </head>
+
 <body>
-    <header>
+    <header class="header">
         <h1>
-            Portifólio do Belmas
+            <a href="index.html">
+                Projetos do Belmas
+            </a>
         </h1>
-        <ul>   
+        <ul>
             <li><a href="projetos.html">Projetos</a></li>
-            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><button onClick="toggleDarkMode()"> Trocar Cor</button></li>
         </ul>
-        <button></button>
+        <!-- <button onClick="toggleDarkMode()"> Trocar Cor</button> -->
     </header>
+    <main>
+        <iframe src="https://pedrorb-hub.github.io/iosescolhaCaso/" frameborder="0" name="frameUnico" width="1200px" height="950px"></iframe>
+        <ul class="lista">
+            <li><a href="https://pedrorb-hub.github.io/iosMagento/" target="frameUnico">Magento</a></li>
+            <li><a href="https://pedrorb-hub.github.io/iosescolhaCaso/" target="frameUnico">Switch Case</a></li>
+            <li><a href="https://iosprojeto3.netlify.app/" target="frameUnico">Bakery</a></li>
+          
+            <li><a href="https://pedrorb-hub.github.io/iosTabuada/" target="frameUnico">Tabuada</a></li>
+            <li><a href="https://pedrorb-hub.github.io/iosFlexGrid/" target="frameUnico">Flex-Grid</a></li>
+          
+            <li><a href="https://pedrorb-hub.github.io/iosparallax/" target="frameUnico">Parallax</a></li>
+            <li><a href="https://pedrorb-hub.github.io/ioscalculadora/" target="frameUnico">Calculadora</a></li>
+            <li><a href="https://pedrorb-hub.github.io/iosCron-metro/" target="frameUnico">Cronômetro</a></li>
+            <li><a href="https://pedrorb-hub.github.io/iosIMC/" target="frameUnico">Índice de Massa Corporal</a></li>
+            <li><a href="https://pedrorb-hub.github.io/iosalbumdefotos/" target="frameUnico">Álbum de fotos</a></li>
+          </ul>
+
+
+
+
+    </main>
 </body>
+
 </html>
