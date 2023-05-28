@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <link rel="stylesheet" href="estilera.css">
     <meta charset="UTF-8">
@@ -8,49 +9,50 @@
     <script src="javascript.js"></script>
     <title>Portifólio do Belmas</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <div class="body">
+
     <header class="header">
         <h1>
             Portifólio do Belmas
         </h1>
-        <ul>   
+        <ul>
             <li><a href="projetos.html">Projetos</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#contato">Contato</a></li>
             <li><button onClick="toggleDarkMode()"> Trocar Cor</button></li>
         </ul>
-        <!-- <button onClick="toggleDarkMode()"> Trocar Cor</button> -->
     </header>
     <main>
         <section class="secao1">
             <article class="secao1-texto">
                 <h2>Pedro Belmont</h2>
                 <p>Tenho 19 anos, sou solteiro e estou procurando uma oportunidade para ingressar no mercado de programação web. Desde criança, sempre gostei de tecnologias e de como é possível moldá-las e criar novas. No futuro próximo, pretendo estudar Machine Learning para desenvolver AIs e auxiliar em diversas funções da nossa vida.
-                    
                 </p>
             </article>
-            <img src="/img/pedro.jpg" alt="">
+            <img src="/img/images.jfif" alt="">
         </section>
         <section class="secao2">
             <div class="secao2-texto">
                 <h2>Projetos desenvolvidos</h2>
-                <p>Verifique os projetos que já foram realizados e concluídos, em grupo ou individualmente, por mim. A maioria foi realizada durante o Curso de Programação Web do Instituto da Oportunidade Social.</p>
+                <p>Verifique os principais projetos já feitos, clique no GitHub para entrar diretamente no perfil e ver todos os projetos.</p>
             </div>
             <div class="projetos">
-                <a href="" class="card">
-                  <img src="/img/POW.png" alt="a">
-                  <p>tituloaaaaaaaa</p>
-                </a >
-                <a href="" class="card">
-                    <img src="/mountain.jpg" alt="a">
-                    <p>Principais</p>
-                </a >
-                <a href="" class="card">
-                    <img src="/img/bakery-port.png" alt="a">
-                    <p>tituloaaaaaaaa</p>
-                </a >
+                <a href="projetos.html" class="card">
+                    <img src="/img/POW.png" alt="Imagem do Site Switch Case">
+                    <p>Switch Case</p>
+                </a>
+                <a href="projetos.html" class="card">
+                    <img src="/img/stock.jpg" alt="Imagem de um notebook com códigos ">
+                    <p>Ver Mais</p>
+                </a>
+                <a href="https://github.com/PedroRB-hub" class="card" target="_blank">
+                    <img src="/img/git.png" alt="Imagem do GitHub">
+                    <p>GitHub</p>
+                </a>
 
             </div>
         </section>
@@ -60,16 +62,17 @@
                 <h3>ACV Turismo</h3>
                 <p>Empresa de Turismo estabelecida em Porto Alegre, na ACV Turismo onde estive por dois meses (por motivos de mudança de residência), trabalhava como Auxiliar de administração, atuo em diversas funções</p>
                 <h4 class="habilidade">Hablidades/Capacidades trabalhadas</h4>
-                <ul> 
+                <ul>
                     <li>Comunicação</li>
                     <li>Hierarquia</li>
                     <li>Soluções</li>
                     <li>Foco</li>
                 </ul>
             </div>
+            <a href="/img/Currículo.docx" download="">Baixar Currículo</a>
         </section>
         <section class="secao4">
-            <h2>Onde já estudei por completo</h2>
+            <h2>Onde já estudei</h2>
             <div>
                 <article class="curso">
                     <p>Ensino Médio</p> <br>
@@ -83,7 +86,30 @@
                 </article>
             </div>
         </section>
-      
     </main>
+    <footer class="footer" id="contato">
+        <div class="footer1">
+            <h2> Belmont's Newsletter</h2><br>
+            <p>Faça login e tenha atendimento especial.</p>
+        </div>
+        <div class="bg">
+            <form>
+                <div class="form-field">
+                    <input type="email" placeholder="Email / Usuário" required />
+                </div>
+
+                <div class="form-field">
+                    <input type="password" placeholder="Senha" required />
+                </div>
+
+                <div class="form-field">
+                    <button class="btn" type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+    </footer>
+    
+</div>
 </body>
+
 </html>
